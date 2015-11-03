@@ -1,12 +1,17 @@
+# Deprecated
+
+This fork is officially deprecated in favor of [Parallels Driver for Docker
+Machine](https://github.com/Parallels/docker-machine-parallels/), which is
+compatible with Docker Machine 0.5.0+
+
+The code and documentation here only exist as a reference for users who have not
+yet switched over and want to use Docker Machine v0.4.0 with Parallels Desktop
+for Mac.
+
 # Docker Machine + Parallels driver
 
 This is a fork of [Docker Machine](https://github.com/docker/machine) repository
 with added support of Parallels Desktop for Mac.
-This is a temporary solution for those who want to use Docker Machine v0.4.0
-with Parallels Desktop.
-
-We expect that an official support of `parallels` driver will be available in
-Docker Machine v0.5.0, when the new plugin model will be implemented.
 
 ## Requirements
 * OS X 10.9 of later
@@ -26,7 +31,7 @@ $ chmod +x /usr/local/bin/docker-machine
 
 **NB!** This is a replacement for the official `docker-machine` binary. If you
 will install or update "Docker Toolbox" in the future, it could override this
-binary and you migth want to re-download it again.
+binary and you might want to re-download it again.
 
 ## Usage
 Official documentation for Docker Machine [is available here](https://docs.docker.com/machine/).
@@ -100,4 +105,3 @@ cf2616975b4a: Pull complete
 Digest: sha256:df9e13f36d2d5b30c16bfbf2a6110c45ebed0bfa1ea42d357651bc6c736d5322
 Status: Downloaded newer image for busybox:latest
 hello world
-
